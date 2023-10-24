@@ -76,7 +76,7 @@ const handleSubmit = async (e) => {
   loader(messageDiv);
 
   // fetch data from server -> bot's response
-  const response = await fetch("https://codex-chat-app.onrender.com/", {
+  const response = await fetch("https://codex-chat-app.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -98,7 +98,7 @@ const handleSubmit = async (e) => {
     const err = await response.text();
 
     messageDiv.innerHTML = "Something went wrong";
-    alert(err);
+    alert("Something went wrong", err);
   }
 };
 
