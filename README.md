@@ -1,4 +1,4 @@
-# Codex
+# OpenAI chatbot
 
 ## Description
 
